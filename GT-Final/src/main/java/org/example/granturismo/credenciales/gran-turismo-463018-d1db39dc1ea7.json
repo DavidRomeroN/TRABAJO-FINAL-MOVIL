@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "gran-turismo-463018",
+  "private_key_id": "d1db39dc1ea748de3f26cd6d5de55b4cac429593",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjmiuePnxZWGQ/\nVgM5NsRkTUVnZ4IemUbVORUX7STAim+LyRKjjK4oeem1yoVi3ipP6r4o/hFrLIYv\ntDZSiG+8mFma3nprYFoqZ7/dU3tOcC1lOxf9LVe9GwmosdVNuDx6H5fuc9j9y8tA\nLktSki1LkF/wPz2EsuSVQPtxlKcddXaPJ60cxoYp7mPyJXeVUBNvwHBj/vFhQr+j\nF2PgJI6rQwe8/XF934ZsO95nPth0tBH9k6GJaWDZX/qxM/a42IvEOm+it/ctNMv5\nbc2mh2msTmJ1AZps2xSeTJzCbtnq5o1Gv53yg0lIJWQgTdjoWEgrtX3dR6s7O75z\nwTV4VYJ9AgMBAAECggEASHvJz3aHyV3sLFODYhntsTK7CTFG6R+nzlhYDB25JsUu\n3pPbejKeBrjc3vo3VrJvtLCgR7EpLn6vhPsnBjIEr14gdQkU2/X4fMkyrHCMNRhm\nRG+GFVm9gb807FS92I1D3ieZPMB+5xMfnfPk01SIVO5GUz7xlpVbyPTdclkWIWpv\n6ptfLmz5UHsfb75koe7BRIiiQDI4eNTDLDtVWeciLGmmNRBg/It1cvjDvQ7rsd2G\n21kuRsHxATQeaRJ+D/bKu+bIj8xL7c8J12BNsTuYG/gRPa/ggeI1Y4FZp/WxZvY4\nw9gY3LFt6LXXJPJiCgQprnn4CqPdtKSahr9vB0ZeUQKBgQDWylyQ6i7eubaP7K80\nx+Er8DGerA+PLKXqA2lj24LeM1JF/MRuIJm8xTu2Ves1+5V1Vff/zY1UnmobOwbG\nxRWV2eB+el82Htsg7ykyt3xm/VK+Y0rK8KUf+LSyFXiz0TzX7sP+JfsNI4qpEIii\n1UqQo4JQIoUWPrG9qG5iha7WfwKBgQDC/aY9plX9cNBSUiaOIQU3qlrPzolsDaHX\noAunc+25LvCyzycmckmdOvWokB8vx4GiUy3wPNzcaph9jReBiZD/1jxreXzMiM4N\nBkyZ7sjouy8DfCyL1BIzpzEIrQmsq/OzNaAr+gF+Y9bumMR6xSpkLIKKncWTm0nu\nWwR7N02BAwKBgDXY+afi7eksidY/MhV7XroTN31eCXCNcvLd9BfyujZWi3O8UMqD\nJcercrLdi2A3OFr4OHpK3/ms1VEKVUKTujudKajLqP76cVkqXBu44Fk5fPr6DZAf\nEGaZhUN4GpCKDkTcOQqIHw5GMMb9vCOGcXEdbNgGL3NKOGkhxrqwZQqlAoGAPxvP\nISbjr9pCYlJaTifbw29sYtOK4KDs35faDcFUkFnj50tqdWQJ9Uxu07aJkXI1v67C\nMH3SUbhiUEhI8lDu0A6rkXFJdf1VCxwd0Lha6BAlIDChTkQ9+9/B2/f9KJiikD7r\n7y/EKf7wQlrJRJ7poHBTc7+qgaKB5BYrNiHpALcCgYEAtvQ2VBgMzfMmXH3WBuVf\nO1wl1nJMvy7iBfCHWGtv2QKZDIYKi0cqOutbtgt7QmIBwRQkex7cfizerbopk+UU\nKTA7DBRV9HI2BRQqRHErYZTxtRu3bXGU9jueNAyYz3+emt6PND1JERcEjgCWk3u8\nj3um8lJwCa58l9FgrEz+jak=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gran-turismo-gemini-ai@gran-turismo-463018.iam.gserviceaccount.com",
+  "client_id": "118292205710878287484",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gran-turismo-gemini-ai%40gran-turismo-463018.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

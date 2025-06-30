@@ -1,0 +1,234 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "4c3242519c17643f47449b9c2f4f25b3",
+    "entities": [
+      {
+        "tableName": "favorito_paquete",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id_favorito` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `usuario` INTEGER NOT NULL, `referencia_id` INTEGER NOT NULL, `tipo` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idFavorito",
+            "columnName": "id_favorito",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "usuario",
+            "columnName": "usuario",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "referenciaId",
+            "columnName": "referencia_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id_favorito"
+          ]
+        }
+      },
+      {
+        "tableName": "paquetes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idPaquete` INTEGER NOT NULL, `titulo` TEXT NOT NULL, `descripcion` TEXT, `precioTotal` REAL NOT NULL, `estado` TEXT, `duracionDias` INTEGER, `localidad` TEXT NOT NULL, `tipoActividad` TEXT NOT NULL, `cuposMaximos` INTEGER, `fechaInicio` TEXT NOT NULL, `fechaFin` TEXT NOT NULL, `imagenUrl` TEXT, `monedaOriginal` TEXT, `idiomaOriginal` TEXT, `proveedor_idProveedor` INTEGER NOT NULL, `proveedor_nombreCompleto` TEXT NOT NULL, `proveedor_email` TEXT NOT NULL, `proveedor_telefono` TEXT NOT NULL, `proveedor_fechaRegistro` TEXT NOT NULL, `proveedor_usuario` INTEGER NOT NULL, `destino_idDestino` INTEGER NOT NULL, `destino_nombre` TEXT NOT NULL, `destino_descripcion` TEXT NOT NULL, `destino_ubicacion` TEXT NOT NULL, `destino_imagenUrl` TEXT NOT NULL, `destino_latitud` REAL NOT NULL, `destino_longitud` REAL NOT NULL, `destino_popularidad` INTEGER NOT NULL, `destino_precioMedio` REAL NOT NULL, `destino_rating` REAL NOT NULL, PRIMARY KEY(`idPaquete`))",
+        "fields": [
+          {
+            "fieldPath": "idPaquete",
+            "columnName": "idPaquete",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "titulo",
+            "columnName": "titulo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descripcion",
+            "columnName": "descripcion",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "precioTotal",
+            "columnName": "precioTotal",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "estado",
+            "columnName": "estado",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "duracionDias",
+            "columnName": "duracionDias",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "localidad",
+            "columnName": "localidad",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipoActividad",
+            "columnName": "tipoActividad",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cuposMaximos",
+            "columnName": "cuposMaximos",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "fechaInicio",
+            "columnName": "fechaInicio",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fechaFin",
+            "columnName": "fechaFin",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imagenUrl",
+            "columnName": "imagenUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "monedaOriginal",
+            "columnName": "monedaOriginal",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "idiomaOriginal",
+            "columnName": "idiomaOriginal",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "proveedor.idProveedor",
+            "columnName": "proveedor_idProveedor",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proveedor.nombreCompleto",
+            "columnName": "proveedor_nombreCompleto",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proveedor.email",
+            "columnName": "proveedor_email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proveedor.telefono",
+            "columnName": "proveedor_telefono",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proveedor.fechaRegistro",
+            "columnName": "proveedor_fechaRegistro",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proveedor.usuario",
+            "columnName": "proveedor_usuario",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.idDestino",
+            "columnName": "destino_idDestino",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.nombre",
+            "columnName": "destino_nombre",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.descripcion",
+            "columnName": "destino_descripcion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.ubicacion",
+            "columnName": "destino_ubicacion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.imagenUrl",
+            "columnName": "destino_imagenUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.latitud",
+            "columnName": "destino_latitud",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.longitud",
+            "columnName": "destino_longitud",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.popularidad",
+            "columnName": "destino_popularidad",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.precioMedio",
+            "columnName": "destino_precioMedio",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destino.rating",
+            "columnName": "destino_rating",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "idPaquete"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4c3242519c17643f47449b9c2f4f25b3')"
+    ]
+  }
+}

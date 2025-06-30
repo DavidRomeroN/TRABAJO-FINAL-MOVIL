@@ -1,0 +1,150 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "748ea56cae0ae9c0c1cd5b2bac2b9d3c",
+    "entities": [
+      {
+        "tableName": "favorito_paquete",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id_favorito` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `usuario` INTEGER NOT NULL, `referencia_id` INTEGER NOT NULL, `tipo` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idFavorito",
+            "columnName": "id_favorito",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "usuario",
+            "columnName": "usuario",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "referenciaId",
+            "columnName": "referencia_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id_favorito"
+          ]
+        }
+      },
+      {
+        "tableName": "paquetes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idPaquete` INTEGER NOT NULL, `titulo` TEXT NOT NULL, `descripcion` TEXT, `precioTotal` REAL NOT NULL, `estado` TEXT, `duracionDias` INTEGER, `localidad` TEXT NOT NULL, `tipoActividad` TEXT NOT NULL, `cuposMaximos` INTEGER, `fechaInicio` TEXT NOT NULL, `fechaFin` TEXT NOT NULL, `proveedorNombre` TEXT NOT NULL, `destinoNombre` TEXT NOT NULL, `imagenUrl` TEXT, `monedaOriginal` TEXT, `idiomaOriginal` TEXT, PRIMARY KEY(`idPaquete`))",
+        "fields": [
+          {
+            "fieldPath": "idPaquete",
+            "columnName": "idPaquete",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "titulo",
+            "columnName": "titulo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descripcion",
+            "columnName": "descripcion",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "precioTotal",
+            "columnName": "precioTotal",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "estado",
+            "columnName": "estado",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "duracionDias",
+            "columnName": "duracionDias",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "localidad",
+            "columnName": "localidad",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipoActividad",
+            "columnName": "tipoActividad",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cuposMaximos",
+            "columnName": "cuposMaximos",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "fechaInicio",
+            "columnName": "fechaInicio",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fechaFin",
+            "columnName": "fechaFin",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proveedorNombre",
+            "columnName": "proveedorNombre",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destinoNombre",
+            "columnName": "destinoNombre",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imagenUrl",
+            "columnName": "imagenUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "monedaOriginal",
+            "columnName": "monedaOriginal",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "idiomaOriginal",
+            "columnName": "idiomaOriginal",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "idPaquete"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '748ea56cae0ae9c0c1cd5b2bac2b9d3c')"
+    ]
+  }
+}

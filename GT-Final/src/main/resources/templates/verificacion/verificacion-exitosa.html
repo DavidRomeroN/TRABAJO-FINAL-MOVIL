@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo}">Verificación de Cuenta</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        .card h1 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        .card p {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .success-icon {
+            color: #28a745;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+        .btn-home:hover {
+            background-color: #0056b3;
+        }
+        .note {
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="success-icon">&#10004;</div>
+    <h1 th:text="${titulo}">Cuenta Verificada</h1>
+    <p th:text="${mensaje}">Su cuenta ha sido verificada exitosamente.</p>
+    <p class="note">Ya puede cerrar esta ventana con total seguridad.</p>
+</div>
+</body>
+</html>

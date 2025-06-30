@@ -1,0 +1,43 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "e67e0c4c15836b170a2ea247a71827c5",
+    "entities": [
+      {
+        "tableName": "favorito_paquete",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id_favorito` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `usuario` INTEGER NOT NULL, `paquete` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idFavorito",
+            "columnName": "id_favorito",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "usuario",
+            "columnName": "usuario",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paquete",
+            "columnName": "paquete",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id_favorito"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e67e0c4c15836b170a2ea247a71827c5')"
+    ]
+  }
+}
